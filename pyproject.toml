@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "minitorch"
+version = "0.0.0"
+description = "A mini Pytorch package"
+authors = [
+  { name = "Richard Hsieh", email = "rzhsieh@gmail.com" }
+]
+readme = "README.md"
+requires-python = ">= 3.9"
+classifiers = [
+  "Programming Language :: Python :: 3"
+]
+license = "MIT"
+license-files = ["LICENSE"]
+keywords = [
+  "artificial intelligence",
+  "deep learning",
+  "machine learning"
+]
+
+[project.urls]
+Homepage = "https://github.com/richsi/minitorch"
+Issues = "https://github.com/richsi/minitorch/issues"
+
+[tool.setuptools]
+package-dir = {"" = "."}
