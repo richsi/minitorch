@@ -1,6 +1,6 @@
 [build-system]
-requires = ["setuptools>=61.0", "wheel"]
-build-backend = "setuptools.build_meta"
+requires = ["hatchling"]
+build-backend = "hatchling.build"
 
 [project]
 name = "minitorch"
@@ -12,7 +12,7 @@ authors = [
 readme = "README.md"
 requires-python = ">= 3.9"
 classifiers = [
-  "Programming Language :: Python :: 3"
+  "Programming Language :: Python :: 3.9"
 ]
 license = "MIT"
 license-files = ["LICENSE"]
@@ -26,5 +26,5 @@ keywords = [
 Homepage = "https://github.com/richsi/minitorch"
 Issues = "https://github.com/richsi/minitorch/issues"
 
-[tool.setuptools]
-package-dir = {"" = "."}
+[tool.hatch.build.targets.wheel]
+packages = ["minitorch"]
