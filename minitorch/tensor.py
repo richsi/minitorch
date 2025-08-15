@@ -32,4 +32,7 @@ class Tensor:
         self.grad = None
 
     def backward(self):
-        raise NotImplementedError()
+        if not self.requires_grad:
+            raise RuntimeError("Cannot call backward on a tensor that does not require gradients.")
+
+        
